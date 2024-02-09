@@ -1,101 +1,70 @@
-/* Modern Base Styles */
-body {
+/* Basic reset */
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+#root,
+.App {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif; /* Modern, clean font */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f0f2f5; /* Soft, neutral background */
-  color: #333; /* Dark grey for readable contrast */
-  line-height: 1.5;
+  width: 100%;
+  min-height: 100vh;
+  /* Ensures the container stretches through the full height */
 }
 
-code {
-  font-family: "Fira Code", monospace; /* Aesthetic monospace font */
-  background-color: #fafafa; /* Very light background for code snippets */
-  padding: 0.25em 0.5em;
-  border-radius: 4px;
-  font-size: 0.95em;
-  border: 1px solid #e1e4e8; /* Light border for definition */
-}
-
-/* Modern Container Styles */
-.container {
-  margin: 20px auto;
-  max-width: 960px; /* Wider max-width for modern layouts */
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer, more pronounced shadow */
-  border-radius: 12px; /* Larger border-radius for softer edges */
-  padding: 40px; /* More padding for a spacious layout */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
-}
-
-.container:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-}
-
-/* Typography */
-.container h1,
-.about-container h1 {
-  font-size: 2.5rem; /* Larger, more impactful headings */
-  color: #007bff; /* Bright, modern blue */
-  margin-bottom: 1rem;
-}
-
-.container h2,
-.about-container h2 {
-  font-size: 2rem;
-  color: #0056b3; /* Slightly darker blue for subheadings */
-  margin-bottom: 0.75rem;
-}
-
-.container p,
-.about-container p {
-  font-size: 1rem;
-  color: #555; /* Softer text color for easy reading */
-  margin-bottom: 1rem;
-  text-align: left; /* Align to the left for a cleaner look */
-}
-
-/* Buttons and Links */
-a,
-button {
-  background-color: #007bff; /* Vibrant blue background */
-  color: #ffffff; /* White text for contrast */
-  padding: 10px 20px;
-  border-radius: 50px; /* Rounded buttons for a modern look */
-  border: none;
-  text-transform: uppercase; /* Capitalized button text */
-  font-weight: bold;
-  letter-spacing: 1px; /* Spacing for readability */
-  transition: background-color 0.2s ease-in-out; /* Smooth color transition */
-  display: inline-block; /* Correct spacing around buttons */
+.App > div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  cursor: pointer;
+  /* Adjust padding or margins as necessary */
 }
 
-a:hover,
-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  z-index: 1000;
 }
 
-/* Input Styles */
-input,
-textarea {
-  width: 100%; /* Full-width inputs */
-  padding: 15px; /* Comfortable padding */
-  margin: 8px 0; /* Spaced out margins */
-  display: inline-block;
-  border: 1px solid #ccc; /* Subtle borders */
-  border-radius: 4px; /* Consistent rounded corners */
-  box-sizing: border-box; /* Prevent padding from increasing size */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-input:focus,
-textarea:focus {
-  border-color: #007bff; /* Highlight with theme color */
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Subtle glow effect */
-  outline: none; /* Remove default focus outline */
+/* Section Styles */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Enhancements and customizations for specific elements can be added here */
+/* Specific section background colors for visual differentiation */
+#main {
+  background-color: #f44336;
+}
+#about {
+  background-color: #e91e63;
+}
+#projects {
+  background-color: #9c27b0;
+}
+#skills {
+  background-color: #673ab7;
+}
+#connect {
+  background-color: #3f51b5;
+}
