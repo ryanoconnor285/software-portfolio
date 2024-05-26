@@ -1,8 +1,8 @@
 function Connect() {
   return (
-    <div>
+    <section id="connect">
       <h1>LinkedIn</h1>
-    </div>
+    </section>
   );
 }
 

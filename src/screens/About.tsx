@@ -2,7 +2,7 @@ import "../index.css";
 
 export default function About() {
   return (
-    <div>
+    <section id="about">
       <h2>Full Stack Web Developer</h2>
       <p>
         As a full stack web developer, I am deeply passionate about learning and
@@ -70,6 +70,6 @@ export default function About() {
         sparks joy for me. I am excited to continue my journey in software
         engineering and am eager to see what the future holds.
       </p>
-    </div>
+    </section>
   );
 }

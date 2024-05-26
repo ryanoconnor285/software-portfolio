@@ -10,61 +10,37 @@ body,
   padding: 0;
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
   /* Ensures the container stretches through the full height */
 }
 
-.App > div {
+.App > section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* Adjust padding or margins as necessary */
-}
-
-/* Navbar Styles */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #333;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem 0;
-  z-index: 1000;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
+  transition: background 0.5s ease-in-out;
 }
 
 /* Section Styles */
-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+#main {
+  background: linear-gradient(to bottom, #f44336, #e91e63);
 }
 
-/* Specific section background colors for visual differentiation */
-#main {
-  background-color: #f44336;
-}
 #about {
-  background-color: #e91e63;
+  background: linear-gradient(to bottom, #e91e63, #9c27b0);
 }
+
 #projects {
-  background-color: #9c27b0;
+  background: linear-gradient(to bottom, #9c27b0, #673ab7);
 }
+
 #skills {
-  background-color: #673ab7;
+  background: linear-gradient(to bottom, #673ab7, #3f51b5);
 }
+
 #connect {
-  background-color: #3f51b5;
+  background: linear-gradient(to bottom, #3f51b5, #2196f3);
 }

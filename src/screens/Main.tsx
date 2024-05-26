@@ -1,8 +1,8 @@
 function Main() {
   return (
-    <div>
+    <section id="main">
       <h1>Ryan O'Connor</h1>
-    </div>
+    </section>
   );
 }
 
