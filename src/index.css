@@ -24,23 +24,22 @@ body,
   transition: background 0.5s ease-in-out;
 }
 
-/* Section Styles */
 #main {
-  background: linear-gradient(to bottom, #f44336, #e91e63);
+  background: linear-gradient(to bottom, #191970, #1e1f90); /* Midnight Blue to Slightly Lighter */
 }
 
 #about {
-  background: linear-gradient(to bottom, #e91e63, #9c27b0);
+  background: linear-gradient(to bottom, #1e1f90, #2425b0); /* Slightly Lighter to Even Lighter */
 }
 
 #projects {
-  background: linear-gradient(to bottom, #9c27b0, #673ab7);
+  background: linear-gradient(to bottom, #2425b0, #292ad0); /* Even Lighter to Lighter */
 }
 
 #skills {
-  background: linear-gradient(to bottom, #673ab7, #3f51b5);
+  background: linear-gradient(to bottom, #292ad0, #2e2ff0); /* Lighter to Lightest */
 }
 
 #connect {
-  background: linear-gradient(to bottom, #3f51b5, #2196f3);
+  background: linear-gradient(to bottom, #2e2ff0, #000080); /* Lightest to Dark Navy Blue */
 }

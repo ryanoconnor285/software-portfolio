@@ -3,9 +3,9 @@ import "../index.css";
 export default function About() {
   return (
     <section id="about">
-      <h2>Full Stack Web Developer</h2>
+      <h2>Software Engineer and Data Scientist</h2>
       <p>
-        As a full stack web developer, I am deeply passionate about learning and
+        As an experienced full stack software engineer and data scientist, I am deeply passionate about learning and
         creating. My journey in software engineering began in 2013 while I was
         studying to become a licensed Paramedic. The subpar software we used to
         document our skills in the classroom and the field sparked a thought in
