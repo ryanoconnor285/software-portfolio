@@ -1,6 +1,51 @@
-/* Basic reset */
+body, html, .App {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #001233, #3A2A49);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: white;
+}
+
+.content-container {
+  width: 80%
 }
 
 body,
@@ -11,7 +56,6 @@ body,
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  /* Ensures the container stretches through the full height */
 }
 
 .App > section {
@@ -25,21 +69,21 @@ body,
 }
 
 #main {
-  background: linear-gradient(to bottom, #191970, #1e1f90); /* Midnight Blue to Slightly Lighter */
+  background: linear-gradient(to bottom, #001233, #3A2A49); /* Deep Blue to intermediate */
 }
 
 #about {
-  background: linear-gradient(to bottom, #1e1f90, #2425b0); /* Slightly Lighter to Even Lighter */
+  background: linear-gradient(to bottom, #3A2A49, #74485F); /* Intermediate to another intermediate */
 }
 
 #projects {
-  background: linear-gradient(to bottom, #2425b0, #292ad0); /* Even Lighter to Lighter */
+  background: linear-gradient(to bottom, #74485F, #AE6775); /* Intermediate to Light Coral Red */
 }
 
 #skills {
-  background: linear-gradient(to bottom, #292ad0, #2e2ff0); /* Lighter to Lightest */
+  background: linear-gradient(to bottom, #AE6775, #FF595A); /* Light Coral Red to another intermediate */
 }
 
 #connect {
-  background: linear-gradient(to bottom, #2e2ff0, #000080); /* Lightest to Dark Navy Blue */
+  background: linear-gradient(to bottom, #FF595A, #CAC0B3); /* Light Coral Red to Beige */
 }
