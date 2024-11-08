@@ -1,7 +1,7 @@
 function Connect() {
   return (
-    <div>
-      <h1>LinkedIn</h1>
+    <div id="connectComponent" className="component">
+      <h1>Connect</h1>
     </div>
   );
 }
