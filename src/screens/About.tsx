@@ -61,10 +61,6 @@ export default function About() {
           Rescue in Raleigh. My involvement includes assisting with adoption event
           setups and fostering multiple dogs, helping them find loving homes.
         </p>
-<<<<<<< HEAD
-      </div>
-    </section>
-=======
         <p>
           My passion for software is similar to a scene from one of my favorite
           Harry Potter movies, where Professor Slughorn describes a magical moment
@@ -77,6 +73,5 @@ export default function About() {
         </p>
       </div>
     </div>
->>>>>>> 51277d9 (changes)
   );
 }
