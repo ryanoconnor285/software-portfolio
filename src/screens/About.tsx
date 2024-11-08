@@ -2,11 +2,11 @@ import "../index.css";
 
 export default function About() {
   return (
-    <section id="about">
-      <h2>Software Engineer and Data Scientist</h2>
-      <div className="content-container">
+    <div id="aboutComponent" className="component">
+      <h1>Full Stack Web Developer</h1>
+      <div id="aboutContent"> 
         <p>
-          As an experienced full stack software engineer and data scientist, I am deeply passionate about learning and
+          As a full stack web developer, I am deeply passionate about learning and
           creating. My journey in software engineering began in 2013 while I was
           studying to become a licensed Paramedic. The subpar software we used to
           document our skills in the classroom and the field sparked a thought in
@@ -61,7 +61,22 @@ export default function About() {
           Rescue in Raleigh. My involvement includes assisting with adoption event
           setups and fostering multiple dogs, helping them find loving homes.
         </p>
+<<<<<<< HEAD
       </div>
     </section>
+=======
+        <p>
+          My passion for software is similar to a scene from one of my favorite
+          Harry Potter movies, where Professor Slughorn describes a magical moment
+          created by Harry's mother. The transformation of a flower petal into a
+          fish in a bowl of water, described as "beautiful magic, wondrous to
+          behold," resonates with my love for creating software. When I see a
+          stakeholder using software I have developed to solve their problem it
+          sparks joy for me. I am excited to continue my journey in software
+          engineering and am eager to see what the future holds.
+        </p>
+      </div>
+    </div>
+>>>>>>> 51277d9 (changes)
   );
 }

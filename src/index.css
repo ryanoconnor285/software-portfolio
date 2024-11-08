@@ -1,89 +1,163 @@
-body, html, .App {
-  font-family: 'Roboto', sans-serif;
+html, body, #root {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom, #001233, #3A2A49);
-  color: white;
-  text-align: center;
+body, #root, .App {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
+/* Sidenav.css */
+.sidenav {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
 }
 
-p {
-  font-size: 1.2em;
-  margin: 10px 0;
-  color: white;
-}
-
-.content-container {
-  width: 80%
-}
-
-body,
-#root,
-.App {
-  margin: 0;
+.sidenav ul {
+  list-style: none;
   padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
 }
 
-.App > section {
+.sidenav li {
+  margin: 10px 0;
+}
+
+.sidenav .nav-link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidenav .nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Styles for the screens */
+.screen {
+  height: 100vh;
+  padding: 20px;
+}
+
+.component {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: background 0.5s ease-in-out;
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#main {
-  background: linear-gradient(to bottom, #001233, #3A2A49); /* Deep Blue to intermediate */
+#mainComponent {
+  background: linear-gradient(to bottom, #0a192f, #203354);
 }
 
-#about {
-  background: linear-gradient(to bottom, #3A2A49, #74485F); /* Intermediate to another intermediate */
+#aboutComponent {
+  background: linear-gradient(to bottom, #203354, #2c3e50);
 }
 
-#projects {
-  background: linear-gradient(to bottom, #74485F, #AE6775); /* Intermediate to Light Coral Red */
+#aboutContent {
+  width: 60%;
 }
 
-#skills {
-  background: linear-gradient(to bottom, #AE6775, #FF595A); /* Light Coral Red to another intermediate */
+/* Projects Component Grid Styles */
+#projectsComponent {
+  background: linear-gradient(to bottom, #2c3e50, #234e52);
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  min-height: 100vh; /* Ensures it takes up full viewport height */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-#connect {
-  background: linear-gradient(to bottom, #FF595A, #CAC0B3); /* Light Coral Red to Beige */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px; 
+  justify-content: center; 
+}
+.project-card {
+  width: calc(33.333% - 20px);
+  background-color: #52234E;
+  color: 'white'; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s, background-color 0.3s;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background-color: #763270; 
+}
+
+
+/* Carousel Modal Styles */
+.carousel-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px; /* Adds padding around the content */
+  box-sizing: border-box;
+}
+
+.carousel-modal img {
+  max-width: 90vw; /* Limits image width to 90% of viewport width */
+  max-height: 80vh; /* Limits image height to 80% of viewport height */
+  object-fit: contain; /* Ensures images scale properly within the modal */
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff5f5f;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50%;
+  z-index: 1010;
+}
+
+#skillsComponent {
+  background: linear-gradient(to bottom, #234e52, #5e548e);
+}
+#connectComponent {
+  background: linear-gradient(to bottom, #5e548e, #813753);
 }

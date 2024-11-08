@@ -1,8 +1,8 @@
 function Connect() {
   return (
-    <section id="connect">
-      <h1>LinkedIn</h1>
-    </section>
+    <div id="connectComponent" className="component">
+      <h1>Connect</h1>
+    </div>
   );
 }
 
