@@ -1,23 +1,17 @@
-import React, { useEffect } from 'react';
-import './App.css';
-import Main from "./screens/Main";
-import About from "./screens/About";
+import Main from "./screens/Main/Main";
 import Projects from "./screens/Projects";
-import Skills from "./screens/Skills";
-import Connect from "./screens/Connect";
-// import Sidenav from "./components/Sidenav/Sidenav";
+import Connect from "./screens/Connect/Connect";
 
 const App = () => {
   return (
     <div className="App">
-      {/* <Sidenav /> */}
-      <Main />
-      <About />
-      <Projects />
-      <Skills />
-      <Connect />
+      <div className="content-wrapper">
+        <Main />
+        <Projects />
+        <Connect />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

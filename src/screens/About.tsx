@@ -3,7 +3,6 @@ import "../index.css";
 export default function About() {
   return (
     <div id="aboutComponent" className="component">
-      <h1>Full Stack Web Developer</h1>
       <div id="aboutContent"> 
         <p>
           As a full stack web developer, I am deeply passionate about learning and
