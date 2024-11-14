@@ -125,8 +125,6 @@ const Projects = () => {
 
   return (
     <div id="projectsComponent" className="component">
-      <h1>Projects</h1>
-
       <div className="projects-grid">
         {projects.map((project) => (
           <div
