@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import fe_mobile1 from "../assets/fe_mobile/IMG_2091.PNG";
 import fe_mobile2 from "../assets/fe_mobile/IMG_2092.PNG";
@@ -12,8 +9,6 @@ import fe_mobile7 from "../assets/fe_mobile/IMG_2097.PNG";
 import { Project } from "../types/types";
 
 const Projects = () => {
-  const [activeProject, setActiveProject] = useState<Project | null>(null);
-
   const projects: Project[] = [
     {
       id: 1,
@@ -127,33 +122,11 @@ const Projects = () => {
     <div id="projectsComponent" className="component">
       <div className="projects-grid">
         {projects.map((project) => (
-          <div
-            key={project.id}
-            className="project-card"
-            onClick={() => setActiveProject(project)}
-          >
+          <div key={project.id} className="project-card">
             <ProjectCard key={project.id} project={project} />
           </div>
         ))}
       </div>
-
-      {activeProject && (
-        <div className="carousel-modal">
-          <button
-            className="close-button"
-            onClick={() => setActiveProject(null)}
-          >
-            Close
-          </button>
-          <Carousel showThumbs={false}>
-            {activeProject.photos.map((photo, index) => (
-              <div key={index}>
-                <img src={photo} alt={`Slide ${index + 1}`} />
-              </div>
-            ))}
-          </Carousel>
-        </div>
-      )}
     </div>
   );
 };
