@@ -1,6 +1,0 @@
-{
-  "name": "React",
-  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14",
-  "postCreateCommand": "npm install",
-  "workspaceFolder": "/workspace"
-}
