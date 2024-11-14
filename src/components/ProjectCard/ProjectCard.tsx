@@ -26,7 +26,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <li key={index}>{skill.name}</li>
         ))}
       </ul>
-      {/* If you want to show photos, you can include them here */}
       {/* {project.photos.map((photo, index) => (
         <img key={index} src={photo} alt={`${project.title} - Photo ${index + 1}`} />
       ))} */}

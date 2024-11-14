@@ -4,9 +4,17 @@ import "./Connect.css";
 
 const Connect: React.FC = () => {
   const socialLinks = [
-    { icon: FaLinkedin, url: "your-linkedin-url", label: "LinkedIn" },
-    { icon: FaGithub, url: "your-github-url", label: "GitHub" },
-    { icon: FaXTwitter, url: "your-x-url", label: "X" },
+    {
+      icon: FaLinkedin,
+      url: "https://www.linkedin.com/in/ryanoconnor285/",
+      label: "LinkedIn",
+    },
+    {
+      icon: FaGithub,
+      url: "https://github.com/ryanoconnor285",
+      label: "GitHub",
+    },
+    { icon: FaXTwitter, url: "https://x.com/rocsteady285", label: "X" },
   ];
 
   return (
