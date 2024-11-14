@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/software-portfolio/static/css/main.272c9a13.css",
+    "main.js": "/software-portfolio/static/js/main.cbc7b631.js",
+    "static/js/453.791f5986.chunk.js": "/software-portfolio/static/js/453.791f5986.chunk.js",
+    "static/media/IMG_2093.PNG": "/software-portfolio/static/media/IMG_2093.1311b27eef2020713c46.PNG",
+    "static/media/IMG_2091.PNG": "/software-portfolio/static/media/IMG_2091.0eb3bfe5fc3ee2b338c2.PNG",
+    "static/media/IMG_2096.PNG": "/software-portfolio/static/media/IMG_2096.b7939a84870b0112a266.PNG",
+    "static/media/IMG_2092.PNG": "/software-portfolio/static/media/IMG_2092.ec663da26bf8275e9181.PNG",
+    "static/media/IMG_2097.PNG": "/software-portfolio/static/media/IMG_2097.08a5d1323068c14e2bc3.PNG",
+    "static/media/IMG_2094.PNG": "/software-portfolio/static/media/IMG_2094.47b39a9850a725d901ff.PNG",
+    "static/media/IMG_2095.PNG": "/software-portfolio/static/media/IMG_2095.190576ff6df8d3f32040.PNG",
+    "index.html": "/software-portfolio/index.html",
+    "main.272c9a13.css.map": "/software-portfolio/static/css/main.272c9a13.css.map",
+    "main.cbc7b631.js.map": "/software-portfolio/static/js/main.cbc7b631.js.map",
+    "453.791f5986.chunk.js.map": "/software-portfolio/static/js/453.791f5986.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.272c9a13.css",
+    "static/js/main.cbc7b631.js"
+  ]
+}
